@@ -9,7 +9,11 @@ export default {
         secondary: 'hsl(345, 95%, 68%)',
         tertiary: 'hsl(235, 16%, 14%)',
         'tertiary-dark': 'hsl(234, 17%, 12%)',
+        quaternary: 'hsl(236, 21%, 26%)',
         text: 'hsl(0, 0%, 100%)',
+      },
+      fontFamily: {
+        'redhat': ['Red Hat Text']
       },
     },
   },
