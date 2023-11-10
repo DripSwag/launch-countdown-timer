@@ -2,3 +2,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  .dropshadow{
+    border-radius: 0.5em;
+  }
+  .dropshadow::after{
+    content: '';
+    width: inherit;
+    height: 100%;
+    z-index: -10;
+    border-radius: 0.5em;
+    background-color: hsl(234, 17%, 12%);
+    position: absolute;
+    transform: translateY(8%);
+  }
+
+  .lighthalf{
+    width: inherit;
+    height: 50%;
+    border-radius: 0.5em;
+    z-index: 0;
+    background-color: rgba(44, 44, 68, 1);
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
+  .semicircle-left{
+    border-radius: 0 999rem 999rem 0;
+    position: absolute;
+    left: 0;
+    background-color: hsl(234, 17%, 12%);
+    width: 5%;
+    aspect-ratio: 1 / 2;
+  }
+  .semicircle-right{
+    position: absolute;
+    right: 0;
+    background-color: hsl(234, 17%, 12%);
+    width: 5%;
+    aspect-ratio: 1 / 2;
+    border-radius:  999rem 0 0 999rem;
+  }
+}
