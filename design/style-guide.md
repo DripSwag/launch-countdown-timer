@@ -40,4 +40,3 @@ icon library. Some suggestions can be found below:
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
-
