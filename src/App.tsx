@@ -54,20 +54,25 @@ function App() {
         </div>
       </div>
       <div className='absolute left-1/2 w-max bottom-[7%] z-20 flex gap-4 -translate-x-1/2'>
-        <SocialButton>
+        <SocialButton platform='Facebook'>
           <Facebook />
         </SocialButton>
-        <SocialButton>
+        <SocialButton platform='Pinterest'>
           <Pinterest />
         </SocialButton>
-        <SocialButton>
+        <SocialButton platform='Instagram'>
           <Instagram />
         </SocialButton>
       </div>
-      <img src={stars} className='w-screen h-screen fixed z-0 top-0'></img>
+      <img
+        src={stars}
+        className='w-screen h-screen fixed z-0 top-0'
+        alt=''
+      ></img>
       <img
         src={background}
         className='w-full fixed bottom-0 z-10 min-h-[150px]'
+        alt=''
       ></img>
     </main>
   )
